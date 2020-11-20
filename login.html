@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kerala Tourism</title>
+        <link rel="icon" href="logo.png">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+        <title>Log In</title>
+
+        <style>
+            body{
+                background-color: rgb(238, 235, 235);
+            }
+        </style>
+    </head>
+
+    <body>
+ 
+  <!-- nav -->
+    
+  
+
+  <div style="height: 4rem; background-color: rgb(235, 22, 75);  margin: 0px;" class="container-fluid row w-100 sticky-top">
+    <div class="col-6 col-md-4 col-sm-4">
+      <!-- Image and text -->
+      <nav class="navbar navbar-light " style="  height: 64px !important; background-color:  rgb(235, 22, 75);">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" width="65" height="45" class="d-inline-block align-top" alt="">
+          
+            <span class="nav-brand-name white">Kerala Tourism</span>
+            <p  class="nav-brand-p">Gods Own Country</p>
+          
+        </a>
+      </nav>
+    </div>
+    <div class="col-md-8 col-sm-8 col-6 justify-content-end" >
+      <nav class="navbar navbar-expand-lg navbar-light white " style="  float: right; background-color: rgb(235, 22, 75);">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#tour-package-container"><span class="white"><b>Tour Packages</b></span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="white"><b>Destinations</b></span>
+              </a>
+              <div style="background-color:  rgb(235, 22, 75);" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a  class="dropdown-item" href="index.html#destination">Top Destinations</a>
+                <a class="dropdown-item" href="destinations.html">District wise</a>
+              </div>
+            </li>
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact"><span class="white"><b>Contact</b></span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><span class="white"><b>Login</b></span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+<!-- /nav -->
+
+            <div class="content-div row container-fluid">
+    
+                <div class=" container-fluid form-container col-md-6 offset-md-3 ">
+                    <div class="d-flex justify-content-center form-heading">
+                        <h3>Login</h3>
+                    </div>
+                    <form name="myforme" action="index.html" onsubmit="return checklogin()" >
+                        
+                        <div class="form-group">
+                          <label for="inputAddress">Email</label>
+                          <input type="email" class="form-control input-field" id="mail" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">Password</label>
+                          <input type="password" class="form-control input-field" id="pass" placeholder="Password">
+                        </div>
+                        
+                          <div class="d-flex justify-content-center ">
+                            <h6>Don't have an account?<a style="    text-decoration: none;" href="signup.html" onclick="flip(); ">Register</a></h6>
+                        </div>
+                        <div class="d-flex justify-content-center ">
+                            <button type="submit" class="btn button">Login</button>
+                        </div>
+                        
+                      </form> 
+                      
+                      
+                  </div>
+    
+            </div>
+
+
+            <!-- Footer -->
+            <div style="background-color: rgb(77, 76, 76);" class="footer container-fluid">
+
+              <div class="row">
+                <div class="col-12">
+                  <a  href="#"><span style="font-size: 12px;" class="white"><b>COPYRIGHT	&#169 2020 </b></span></a>
+                </div>
+                <div class="col-12">
+                  <p>Follow Us</p>
+                </div>
+                <div class="col-12 footer-social-icons d-flex justify-content-center">
+                  <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                </div>
+              </div>
+            </div>
+
+<!-- 
+<div class="footer">
+  <p>Footer</p>
+</div> -->
+
+
+<!-- /Footer -->
+
+
+
+<script>
+  
+  function checklogin(){
+
+let logname = document.getElementById("mail");
+let logp = document.getElementById("pass");
+
+let logemail = "sreejithsp711@gmail.com";
+let logpass = "Sreejith@123";
+
+  if (logname.value.trim().match(logemail) && logp.value.trim().match(logpass) ) {
+
+    return true;
+
+      
+  } else {
+
+    return false;
+      
+  }
+}
+</script>
+
+
+ <!-- js script -->
+ <!-- <script src="js/script.js"></script> -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+    </body>
+</html>

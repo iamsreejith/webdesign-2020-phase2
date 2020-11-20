@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: sans-serif;
+    /* box-sizing: border-box; */
+}
+
+.content-container{
+    top:50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    /* position: absolute; */
+    background-color: #E6E9F0;
+    height: 500px;
+    width: 400px;
+    
+    /* margin-top: px; */
+
+
+}
+
+.join-container{
+    height: 600px;
+    width: 380px;
+    box-shadow: 10px 10px 16px rgb(192, 183, 183), -10px -10px 16px white;
+    border-radius: 20px;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.join-container .heading{
+
+    padding: 26px 0 45px 0;
+    color: #0FB0E7;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+    padding-bottom: 15px;
+}
+
+.join-container .user{
+    padding: 7px 0;
+
+}
+
+.join-container .user input{
+    padding: 15px 20px;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+    font-style: 0.9em;
+    background-color: #0FCAE7;
+    color: white;
+    width: 270px;
+    margin-bottom: 5px;
+}
+.join-container .register-button{
+    margin-top: 10px;
+}
+.join-container .user input:hover{
+    box-shadow: 5px 5px 8px rgb(185, 184, 184), -5px -5px 10px white;
+    transform: scale(1.1);
+    transition: 0.3s ease all;
+}
+
+.join-container .user input::placeholder{
+    color: white;
+}
+
+
+.join-container .register-button input{
+    border-style: none;
+    outline: none;
+    color: white;
+    background: #0FB0E7 ;
+    padding: 7px 15px;
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px rgb(185, 184, 184), -5px -5px 10px white;
+
+}
+
+.join-container .join-help{
+    font-size: 0.7em;
+    margin-top: 20px;
+    color: grey;
+    cursor: pointer;
+}
+
+.join-container .join-help a{
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+}
+
+.join-container .social{
+    margin-top: 25px;
+}
+
+.join-container .social .items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.join-container .social .items li{
+    list-style-type: none;
+    padding: 0 7px;
+
+}
+
+.join-container .social .items li h3{
+    clear: grey;
+    box-shadow: 5px 5px 8px rgb(185, 184, 184), -5px -5px 10px white;
+    padding: 5px 15px;
+    border-radius: 40%;
+
+
+}
+
+.join-container .social .items li h3:hover{
+    color: white;
+    background-color: #0FB0E7 ;
+    cursor: pointer;
+}
+
+/* 
+.toggle-btn{
+    padding: 19px 30px;
+    cursor: pointer;
+    background:  transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+
+.form-box{
+    position: relative;
+}
+
+#btn{
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f , #ffad0f);
+    border-radius: 30px;
+
+} */
+
+.label-text , .login-label{
+    margin-left: 75px;
+    padding-left: -77px;
+    text-align: start;
+    font-size: 12px;
+    color: grey;
+}
+
+
+
+
+
+
+
+
